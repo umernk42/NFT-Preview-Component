@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.App{
+    padding: 30px 10px;
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+}
+
+main{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 20px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.image{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+/* .image .hover-color{
+    background-color:hsl(178, 100%, 50%) ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.image .hover-color:hover{
+    opacity: 0.5;
+    z-index: 2;
+    cursor: pointer;
+} */
+
+.eye-icon-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+.eye-icon-container .eye-icon{
+    height: 3rem;
+    width: 3rem;
+    
+}
+
+.eye-icon-container:hover{
+    opacity: 1;
+    z-index: 3;
+    background-color:hsla(178, 100%, 50%, 0.455);
+    cursor: pointer;
+}
+
+
+
+main h1{
+    margin: 25px 0 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+main h1:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+main .statement{
+    margin: 0 0 20px;
+}
+
+.eth-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 20px;
+}
+
+.eth-duration, .eth-value{
+    display: flex;
+    align-items: center;
+}
+
+.clock-img, .eth-img{
+    display: flex;
+}
+
+.eth-container .eth-value{
+    color: hsl(178, 100%, 50%);
+}
+
+hr{
+    background-color: hsl(215, 51%, 70%);
+    height: 1.5px;
+    border: none;
+    margin: 15px 0;
+}
+
+.author-info-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.author-info-container .author-img img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.author-info-container p{
+    display: flex;
+    align-items: center;
+}
+
+.author-info-container p .author-name{
+    color: white;
+    font-weight: 400;
+}
+
+.author-info-container p .author-name:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
